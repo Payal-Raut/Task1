@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /*background: linear-gradient(45deg, #3c0064, #cc00ff,#3c0064);*/
+    background-color: 	#313131;
+    padding: 10px 0;
+    transition: background-color 0.5s, color 0.5s;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    /* border-radius: 15px 15px 15px 15px; */
+}
+
+.logo {
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 8px;
+    padding: 0;
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+} 
+
+.nav-item {
+    margin: 15px;
+    font-size: 20px;
+    
+}
+
+.nav-item a {
+    color: white;
+     display: flex;
+    flex: nowrap;
+    text-decoration: none;
+    /* padding: 10px; */
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+.nav-item a:hover {
+    color: #000000;
+    background-color: rgb(119, 216, 185);
+    border-radius: 3px;
+    transform: scale(1.1);
+
+}
+
+.scrolled {
+    background: linear-gradient(45deg, #0056b3, #002f6c);
+}
+
+section {
+    padding: 60px 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: black;
+}
+
+#home {
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+#about{
+    background-color: #E2BBE9
+}
+
+#services{
+    background-color: #7776B3;
+}
+
+#contact{
+    background-color: #5A639C;
+}
+h6{
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+}
+
+@media (max-width: 370px) {
+    .nav-menu {
+        flex-wrap: wrap;
+    }
+}
